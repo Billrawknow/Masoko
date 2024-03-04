@@ -27,8 +27,8 @@ const Navbar = () => {
           }}
         >
           {" "}
-          <Link to="/"> Shop </Link>{" "}
-          {menu === "Shop" ? (
+          <Link style={{textDecoration: 'none'}} to="/"> Shop </Link>{" "}
+          {menu === "shop" ? (
             <hr style={{ backgroundColor: menuColors.shop }} />
           ) : (
             <></>
@@ -40,8 +40,8 @@ const Navbar = () => {
           }}
         >
           {" "}
-          <Link to="/men"> Men </Link>{" "}
-          {menu === "Men" ? (
+          <Link style={{textDecoration: 'none'}} to="/men"> Men </Link>{" "}
+          {menu === "men" ? (
             <hr style={{ backgroundColor: menuColors.men }} />
           ) : (
             <></>
@@ -53,8 +53,8 @@ const Navbar = () => {
           }}
         >
           {" "}
-          <Link to="/women"> Women </Link>{" "}
-          {menu === "Women" ? (
+          <Link style={{textDecoration: 'none'}} to="/women"> Women </Link>{" "}
+          {menu === "women" ? (
             <hr style={{ backgroundColor: menuColors.women }} />
           ) : (
             <></>
@@ -66,8 +66,8 @@ const Navbar = () => {
           }}
         >
           {" "}
-          <Link to="/kids"> Kids </Link>{" "}
-          {menu === "Kids" ? (
+          <Link style={{textDecoration: 'none'}} to="/kids"> Kids </Link>{" "}
+          {menu === "kids" ? (
             <hr style={{ backgroundColor: menuColors.kids }} />
           ) : (
             <></>
@@ -78,7 +78,7 @@ const Navbar = () => {
         <Link to="/login">
           <button> Login </button>
         </Link>
-        <Link to="/cart">
+        <Link style={{textDecoration: 'none'}} to="/cart">
           <img src={cart_icon} alt="" />
         </Link>
         <div className="nav-cart-count"> 0 </div>
