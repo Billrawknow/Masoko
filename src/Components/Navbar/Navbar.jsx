@@ -18,7 +18,7 @@ const Navbar = () => {
       <div className="nav-logo">
         <img src={logo} alt="" />
 
-        <p> Rawknow </p>
+        <p> RAWKNOW </p>
       </div>
       <ul className="nav-menu">
         <li

@@ -2,6 +2,7 @@
     height: 100vh;
     background: linear-gradient(180deg, #eb8bce 0%, #adacfa22 60%);
     display: flex;
+    margin-top: 0;
 
 }
 .hero-left {
