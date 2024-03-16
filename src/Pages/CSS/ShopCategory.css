@@ -42,6 +42,6 @@
 @media (max-width: 1280px) {
     .shopcategory-products {
         grid-template-columns: repeat(4, minmax(0, 1fr));
-        gap: 15px; /* Adjusted for smaller width */
+        gap: 15px;
     }
 }
