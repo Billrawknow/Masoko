@@ -1,12 +1,15 @@
 .offers {
-  width: 65%;
-  height: 60vh;
+  width: 70%;
+  /* height: 60vh; */
+  min-height: 50vh;
+  max-width: 1200px;
   display: flex;
   margin: auto;
   padding: 0px 140px;
   margin-bottom: 150px;
   background: linear-gradient(180deg, #eb8bce 0%, #adacfa22 60%);
   border-radius: 35px;
+  /* margin-top: 280px; */
 }
 .offers-left {
   flex: 1;
@@ -40,7 +43,7 @@
 }
 @media (max-width: 1280px) {
   .offers {
-    padding: 0px 80px;
+    padding: 0px 60px;
     margin-bottom: 120px;
   }
   .offers-left h1{

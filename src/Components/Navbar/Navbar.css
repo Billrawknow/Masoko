@@ -75,6 +75,7 @@
   border-radius: 11px;
   font-size: 14px;
   background: green;
+  color: white;
 }
 .nav-dropdown {
   display: none;
