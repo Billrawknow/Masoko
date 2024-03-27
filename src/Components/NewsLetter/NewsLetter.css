@@ -1,4 +1,6 @@
-.newsletter {
+body {
+    padding: 0 20px; /* Add padding to the body */
+  }.newsletter {
   width: 65%;
   height: 40vh;
   display: flex;
