@@ -150,5 +150,11 @@ body {
     .newsletter div input{
         width: 130px;
         }
-}  
+        .newsletter div button{
+            width: 80px;
+            height: 30px;
+            font-size: 10px;
+}
+}
+
     
