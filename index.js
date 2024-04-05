@@ -12,7 +12,7 @@ app.use(express.json());
 app.use(cors());
 
 //Database Connection With MongoDB
-mongoose.connect("mongodb+srv://Rawknow:Rawknow3436@cluster0.freqnzd.mongodb.net/e-commerce");
+mongoose.connect("mongodb+srv://Rawknow:Rawknow3436@cluster0.freqnzd.mongodb.net/ecommerce").then(()=>(console.log("DB Connected"))).catch((error)=>(console.log(error.message)));
 
 //API Creation
 
@@ -39,6 +39,48 @@ app.post("/upload",upload.single('product'),(req,res)=>{
         success:1,
         imaage_url:`http://localhost:${port}/images/${req.file.filename}`
     })
+})
+
+//Schema for Creating Products
+
+const Product = mongoose.model("Product",{
+    id:{
+      type: Number,
+      required:true,  
+    },
+    name:{
+        type:String,
+        required:true
+    },
+    image:{
+        type:String,
+        required:true,
+    },
+    category:{
+        type:String,
+        required:true,
+    },
+    nw_pricw:{
+        type:Number,
+        required:true,
+    },
+    old_price:{
+        type:Number,
+        required:true,
+    },
+    date:{
+        type:Date,
+    default:Date.now,
+    },
+    available:{
+        type:Boolean,
+        default:true,
+    },
+
+})
+
+app.post('/addproduct',async()=>{
+    id:req.body.id
 })
 
 app.listen(port,(error)=>{
